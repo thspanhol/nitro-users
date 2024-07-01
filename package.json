@@ -1,0 +1,19 @@
+{
+  "name": "nitro-second",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/runtime": "^7.24.7",
+    "vite": "^5.3.1",
+    "vite-plugin-babel": "^1.2.0"
+  }
+}

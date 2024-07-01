@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alterar Usuário</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Alterar Usuário</h1>
+    <p id="TEXT">Insira as informações do usuário que deseja alterar.</p>
+    <div>
+      <label for="nome">Nome:</label>
+      <input id="nome" type="text" />
+
+      <label for="email">E-mail:</label>
+      <input id="email" type="text" />
+
+      <label for="senha">Senha:</label>
+      <input id="senha" type="password" />
+
+      <label for="confirm">Confirmação de Senha:</label>
+      <input id="confirm" type="password" />
+
+      <button id="PUT">Confirmar Usuário</button>
+      <button id="ATT" name="future-email" style="display: none">
+        Atualizar Usuário
+      </button>
+    </div>
+    <button onclick="location.href='../../index.html'">
+      Voltar para o Menu Principal
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
