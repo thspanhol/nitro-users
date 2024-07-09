@@ -30,7 +30,7 @@ function App() {
 
   return (
     <>
-      <Header setMain={setMain} />
+      <Header setMain={setMain} dataBase={dataBase} />
       {main === "Welcome" && <Welcome dataBase={dataBase} getData={getData} />}
       {main === "CreateUser" && (
         <CreateUser

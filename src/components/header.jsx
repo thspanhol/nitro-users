@@ -1,4 +1,4 @@
-const Header = ({ setMain }) => {
+const Header = ({ setMain, dataBase }) => {
   return (
     <div>
       <img
@@ -8,16 +8,32 @@ const Header = ({ setMain }) => {
         onClick={() => setMain("Welcome")}
       />
       <div>
-        <button style={{ margin: "2px" }} onClick={() => setMain("CreateUser")}>
+        <button
+          style={{ margin: "2px" }}
+          onClick={() => setMain("CreateUser")}
+          disabled={dataBase === "Carregando"}
+        >
           Criar Usuário
         </button>
-        <button style={{ margin: "2px" }} onClick={() => setMain("EditUser")}>
+        <button
+          style={{ margin: "2px" }}
+          onClick={() => setMain("EditUser")}
+          disabled={dataBase === "Carregando"}
+        >
           Alterar Usuário
         </button>
-        <button style={{ margin: "2px" }} onClick={() => setMain("ShowUsers")}>
+        <button
+          style={{ margin: "2px" }}
+          onClick={() => setMain("ShowUsers")}
+          disabled={dataBase === "Carregando"}
+        >
           Mostrar Usuários
         </button>
-        <button style={{ margin: "2px" }} onClick={() => setMain("DeleteUser")}>
+        <button
+          style={{ margin: "2px" }}
+          onClick={() => setMain("DeleteUser")}
+          disabled={dataBase === "Carregando"}
+        >
           Excluir Usuário
         </button>
       </div>
